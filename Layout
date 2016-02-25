@@ -1,0 +1,64 @@
+#Space Worksheet
+
+![alt text](http://i.imgur.com/GwVqsqt.png "final image")
+
+##Task 1 - Create your Sun
+
+* open [JSFiddle](http://www.jsfiddle.net) in a new tab (preferably using Google Chrome)
+* create a blank svg board in the HTML window (top left)
+
+```xml
+<svg height="600" width="600">
+
+</svg>
+```
+
+* put a square inside
+  * 4 coordinates (0,0) (0,600) (600,600) (600,0)
+  * fill it with a black colour
+
+```xml
+<polygon points="0,0 0,600 600,600 600,0" fill="black"/>
+```
+
+* put a circle for the sun in the middle
+  * cx = center x value (middle)
+  * cy = center y value (middle)
+  * r = radius
+
+```xml
+<circle cx="300" cy="300" r="50" fill="yellow" />
+```
+
+* click run at the top left - did you get what you expected?
+
+***
+
+##Task 2 - put the earth and it's orbit circle
+
+* Let's start by putting an Earth into our solar system
+  * Note - the cy value (think of the x and y grid) to move it up and down - cx moves it left and right
+
+```xml
+<circle cx="300" cy="100" r="10" fill="green" />
+```
+  
+* Earth will travel in an orbit around the sun (another circle!)
+  * Note - fill-opacity = how see-through an item is (0.0) is see-through
+
+```xml
+<circle cx="300" cy="300" r="220" stroke-width="1" stroke="white" fill-opacity="0.0"/>
+```
+
+***
+
+##Task 3 - put all the other planets in
+
+* look up what other planets we have in our solar system
+* In the same way we added the Earth - add in the others
+* Hint: start off with Mercury as that is closest to the sun.
+* pay attention to the radius (r value) of some planets (jupiter is a bigger than Earth)
+
+***
+
+Remember to save your JSFiddle and write down the url somewhere - we will be animating our solar system next week!
