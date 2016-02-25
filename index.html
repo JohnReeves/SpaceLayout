@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Spacelayout by JohnReeves</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Spacelayout</h1>
+      <h2 class="project-tagline">Draw your planets with SVG HTML tags.</h2>
+      <a href="https://github.com/JohnReeves/SpaceLayout" class="btn">View on GitHub</a>
+      <a href="https://github.com/JohnReeves/SpaceLayout/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/JohnReeves/SpaceLayout/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="space-worksheet" class="anchor" href="#space-worksheet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Space Worksheet</h1>
+
+<p><img src="http://i.imgur.com/GwVqsqt.png" alt="alt text" title="final image"></p>
+
+<h2>
+<a id="task-1---create-your-sun" class="anchor" href="#task-1---create-your-sun" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 1 - Create your Sun</h2>
+
+<ul>
+<li>open <a href="http://www.jsfiddle.net">JSFiddle</a> in a new tab (preferably using Google Chrome)</li>
+<li>create a blank svg board in the HTML window (top left)</li>
+</ul>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">svg</span> <span class="pl-e">height</span>=<span class="pl-s"><span class="pl-pds">"</span>600<span class="pl-pds">"</span></span> <span class="pl-e">width</span>=<span class="pl-s"><span class="pl-pds">"</span>600<span class="pl-pds">"</span></span>&gt;
+
+&lt;/<span class="pl-ent">svg</span>&gt;</pre></div>
+
+<ul>
+<li>put a square inside
+
+<ul>
+<li>4 coordinates (0,0) (0,600) (600,600) (600,0)</li>
+<li>fill it with a black colour</li>
+</ul>
+</li>
+</ul>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">polygon</span> <span class="pl-e">points</span>=<span class="pl-s"><span class="pl-pds">"</span>0,0 0,600 600,600 600,0<span class="pl-pds">"</span></span> <span class="pl-e">fill</span>=<span class="pl-s"><span class="pl-pds">"</span>black<span class="pl-pds">"</span></span>/&gt;</pre></div>
+
+<ul>
+<li>put a circle for the sun in the middle
+
+<ul>
+<li>cx = center x value (middle)</li>
+<li>cy = center y value (middle)</li>
+<li>r = radius</li>
+</ul>
+</li>
+</ul>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">circle</span> <span class="pl-e">cx</span>=<span class="pl-s"><span class="pl-pds">"</span>300<span class="pl-pds">"</span></span> <span class="pl-e">cy</span>=<span class="pl-s"><span class="pl-pds">"</span>300<span class="pl-pds">"</span></span> <span class="pl-e">r</span>=<span class="pl-s"><span class="pl-pds">"</span>50<span class="pl-pds">"</span></span> <span class="pl-e">fill</span>=<span class="pl-s"><span class="pl-pds">"</span>yellow<span class="pl-pds">"</span></span> /&gt;</pre></div>
+
+<ul>
+<li>click run at the top left - did you get what you expected?</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="task-2---put-the-earth-and-its-orbit-circle" class="anchor" href="#task-2---put-the-earth-and-its-orbit-circle" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 2 - put the earth and it's orbit circle</h2>
+
+<ul>
+<li>Let's start by putting an Earth into our solar system
+
+<ul>
+<li>Note - the cy value (think of the x and y grid) to move it up and down - cx moves it left and right</li>
+</ul>
+</li>
+</ul>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">circle</span> <span class="pl-e">cx</span>=<span class="pl-s"><span class="pl-pds">"</span>300<span class="pl-pds">"</span></span> <span class="pl-e">cy</span>=<span class="pl-s"><span class="pl-pds">"</span>100<span class="pl-pds">"</span></span> <span class="pl-e">r</span>=<span class="pl-s"><span class="pl-pds">"</span>10<span class="pl-pds">"</span></span> <span class="pl-e">fill</span>=<span class="pl-s"><span class="pl-pds">"</span>green<span class="pl-pds">"</span></span> /&gt;</pre></div>
+
+<ul>
+<li>Earth will travel in an orbit around the sun (another circle!)
+
+<ul>
+<li>Note - fill-opacity = how see-through an item is (0.0) is see-through</li>
+</ul>
+</li>
+</ul>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">circle</span> <span class="pl-e">cx</span>=<span class="pl-s"><span class="pl-pds">"</span>300<span class="pl-pds">"</span></span> <span class="pl-e">cy</span>=<span class="pl-s"><span class="pl-pds">"</span>300<span class="pl-pds">"</span></span> <span class="pl-e">r</span>=<span class="pl-s"><span class="pl-pds">"</span>220<span class="pl-pds">"</span></span> <span class="pl-e">stroke-width</span>=<span class="pl-s"><span class="pl-pds">"</span>1<span class="pl-pds">"</span></span> <span class="pl-e">stroke</span>=<span class="pl-s"><span class="pl-pds">"</span>white<span class="pl-pds">"</span></span> <span class="pl-e">fill-opacity</span>=<span class="pl-s"><span class="pl-pds">"</span>0.0<span class="pl-pds">"</span></span>/&gt;</pre></div>
+
+<hr>
+
+<h2>
+<a id="task-3---put-all-the-other-planets-in" class="anchor" href="#task-3---put-all-the-other-planets-in" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Task 3 - put all the other planets in</h2>
+
+<ul>
+<li>look up what other planets we have in our solar system</li>
+<li>In the same way we added the Earth - add in the others</li>
+<li>Hint: start off with Mercury as that is closest to the sun.</li>
+<li>pay attention to the radius (r value) of some planets (jupiter is a bigger than Earth)</li>
+</ul>
+
+<hr>
+
+<p>Remember to save your JSFiddle and write down the url somewhere - we will be animating our solar system next week!</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/JohnReeves/SpaceLayout">Spacelayout</a> is maintained by <a href="https://github.com/JohnReeves">JohnReeves</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
