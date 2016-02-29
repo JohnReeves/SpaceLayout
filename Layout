@@ -34,11 +34,15 @@
 
 ##Task 2 - run and save your work
 
-* click run at the top left - did you get what you expected?
+![alt text](http://i.imgur.com/bQtzWJV.png "run")
+
+* click *run* at the top left - did you get what you expected?
   * press this every time you want to see what your code does 
   * this should then appear in the bottom right box "Result"
 
-* click save at the top left - did you write down the unique URL?
+![alt text](http://i.imgur.com/3adS9l3.png "save")
+
+* click *save* at the top left - did you write down the unique URL?
   * JSFiddle creates a unique URL so you don't lose anything
   * next time you can begin where you left off :-)
 
