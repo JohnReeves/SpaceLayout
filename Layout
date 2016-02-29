@@ -30,11 +30,21 @@
 <circle cx="300" cy="300" r="50" fill="yellow" />
 ```
 
+***
+
+##Task 2 - run and save your work
+
 * click run at the top left - did you get what you expected?
+  * press this every time you want to see what your code does 
+  * this should then appear in the bottom right box "Result"
+
+* click save at the top left - did you write down the unique URL?
+  * JSFiddle creates a unique URL so you don't lose anything
+  * next time you can begin where you left off :-)
 
 ***
 
-##Task 2 - put the earth and it's orbit circle
+##Task 3 - put the earth and it's orbit circle
 
 * Let's start by putting an Earth into our solar system
   * Note - the cy value (think of the x and y grid) to move it up and down - cx moves it left and right
@@ -52,7 +62,7 @@
 
 ***
 
-##Task 3 - put all the other planets in
+##Task 4 - put all the other planets in
 
 * look up what other planets we have in our solar system
 * In the same way we added the Earth - add in the others
